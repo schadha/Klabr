@@ -196,6 +196,7 @@
     userNameField.autocorrectionType = UITextAutocorrectionTypeNo;
     userNameField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     userNameField.selectedBorderColor = [UIColor colorWithRed:92.0f/255 green:184.0f/255 blue:92.0f/255 alpha:1];
+    userNameField.clearsOnBeginEditing = YES;
     [self.view addSubview:userNameField];
     
     CGRect rect2 = CGRectMake(20, 150, 280, 30);
@@ -209,6 +210,7 @@
     passwordField.autocorrectionType = UITextAutocorrectionTypeNo;
     passwordField.autocapitalizationType = UITextAutocapitalizationTypeNone;
     passwordField.selectedBorderColor = [UIColor colorWithRed:92.0f/255 green:184.0f/255 blue:92.0f/255 alpha:1];
+    passwordField.clearsOnBeginEditing = YES;
     [self.view addSubview:passwordField];
     
     self.userNameField = userNameField;

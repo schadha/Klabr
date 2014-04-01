@@ -159,6 +159,7 @@
     userNameField.font = [UIFont systemFontOfSize:14];
     userNameField.autocorrectionType = UITextAutocorrectionTypeNo;
     userNameField.autocapitalizationType = UITextAutocapitalizationTypeNone;
+    userNameField.clearsOnBeginEditing = YES;
     userNameField.selectedBorderColor = [UIColor colorWithRed:92.0f/255 green:184.0f/255 blue:92.0f/255 alpha:1];
     [self.view addSubview:userNameField];
     

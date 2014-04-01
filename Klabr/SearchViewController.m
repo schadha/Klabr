@@ -365,6 +365,7 @@ static NSString *const API_KEY = @"AIzaSyDJhytcECfUZ64UX-PqFPifGJc5gvrhppk";
     searchField.font = [UIFont systemFontOfSize:14];
     searchField.autocorrectionType = UITextAutocorrectionTypeDefault;
     searchField.autocapitalizationType = UITextAutocapitalizationTypeSentences;
+    searchField.clearsOnBeginEditing = YES;
     searchField.selectedBorderColor = [UIColor colorWithRed:91.0f/255 green:192.0f/255 blue:222.0f/255 alpha:1];
     [self.view addSubview:searchField];
     
