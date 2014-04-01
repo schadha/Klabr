@@ -1,0 +1,5 @@
+#include "Pods-UICustomizeKit.xcconfig"
+GCC_PREPROCESSOR_DEFINITIONS = COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/UICustomizeKit" "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/BootstrapUI" "${PODS_ROOT}/Headers/UICustomizeKit"
+OTHER_LDFLAGS = -ObjC ${PODS_UICUSTOMIZEKIT_OTHER_LDFLAGS}
+PODS_ROOT = ${SRCROOT}

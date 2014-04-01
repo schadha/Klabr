@@ -1,0 +1,14 @@
+PODS:
+  - BootstrapUI (0.0.1):
+    - UICustomizeKit
+  - UICustomizeKit (0.1.1)
+
+DEPENDENCIES:
+  - BootstrapUI
+  - UICustomizeKit
+
+SPEC CHECKSUMS:
+  BootstrapUI: 1148959c9f448a4a6de1b038f9409ef238482488
+  UICustomizeKit: 18f0e70b20c0a3ec268f6dbc551cac7f0b563ba2
+
+COCOAPODS: 0.31.0
