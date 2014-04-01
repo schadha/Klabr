@@ -165,7 +165,7 @@
     // Configure the cell
     NSUInteger rowNumber = [indexPath row];
     
-    if (rowNumber < 7) {
+    if (rowNumber < 9) {
         [self.chatTableView setUserInteractionEnabled:NO];
     }
     else {
@@ -175,7 +175,7 @@
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     [cell.textLabel setLineBreakMode:NSLineBreakByWordWrapping];
     [cell.textLabel setNumberOfLines:0];
-    
+    [cell.textLabel setFont:[UIFont systemFontOfSize:14]];
     cell.textLabel.text = [self.messages objectAtIndex:rowNumber];
     
     
@@ -189,7 +189,7 @@
     
     CGFloat lineHeight = cell.textLabel.font.lineHeight;
     CGFloat lines = (text.length / 55.0f) * lineHeight;
-    CGFloat height = lines + 50.0f; //adding some padding
+    CGFloat height = lines + 30.0f; //adding some padding
     return height;
 }
 
