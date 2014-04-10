@@ -13,7 +13,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    self.SERVER_IP = @"http://localhost";//@"http://ec2-54-186-249-114.us-west-2.compute.amazonaws.com";
+    self.SERVER_IP = @"http://mickey.cs.vt.edu";//http://localhost";//@"http://ec2-54-186-249-114.us-west-2.compute.amazonaws.com";
     self.PORT = @"3000";
     self.userData = [[NSDictionary alloc] init];
     return YES;
