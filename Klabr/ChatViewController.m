@@ -57,7 +57,18 @@
     self.sendButton.corners = UIRectCornerAllCorners;
     self.sendButton.colorRange = range;
     
-    CGRect rect = CGRectMake(13, 522, 251, 30);
+    CGRect screenRect = [[UIScreen mainScreen] bounds];
+    CGFloat screenHeight = screenRect.size.height;
+    
+    CGRect rect;
+    
+    if (screenHeight == 480.0) {
+        rect = CGRectMake(13, 437, 245, 30);
+    }
+    else {
+        rect = CGRectMake(13, 525, 245, 30);
+    }
+    
     BTTextField *messageField = [[BTTextField alloc] initWithFrame:rect];
     messageField.borderWidth = 1.5;
     messageField.borderColor = [UIColor colorWithRed:91.0f/255 green:192.0f/255 blue:222.0f/255 alpha:1];
@@ -67,6 +78,7 @@
     messageField.autocorrectionType = UITextAutocorrectionTypeDefault;
     messageField.autocapitalizationType = UITextAutocapitalizationTypeSentences;
     messageField.selectedBorderColor = [UIColor colorWithRed:91.0f/255 green:192.0f/255 blue:222.0f/255 alpha:1];
+    
     [self.view addSubview:messageField];
     
     self.messageBox = messageField;
@@ -165,7 +177,7 @@
     // Configure the cell
     NSUInteger rowNumber = [indexPath row];
     
-    if (rowNumber < 9) {
+    if ([self.messages count] < 11) {
         [self.chatTableView setUserInteractionEnabled:NO];
     }
     else {
