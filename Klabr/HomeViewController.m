@@ -178,13 +178,13 @@
     self.createAccountButton.corners = UIRectCornerAllCorners;
     self.createAccountButton.colorRange = range;
     
-    self.forgotPasswordButton.rounding = 8.0f;
-    self.forgotPasswordButton.colors = @[[UIColor colorWithRed:217.0f/255 green:83.0f/255 blue:79.0f/255 alpha:1]];
-    [self.forgotPasswordButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    self.forgotPasswordButton.selectedColors = @[[UIColor blueColor]];
-    self.forgotPasswordButton.disabledColors = @[[UIColor lightGrayColor]];
-    self.forgotPasswordButton.corners = UIRectCornerAllCorners;
-    self.forgotPasswordButton.colorRange = range;
+//    self.forgotPasswordButton.rounding = 8.0f;
+//    self.forgotPasswordButton.colors = @[[UIColor colorWithRed:217.0f/255 green:83.0f/255 blue:79.0f/255 alpha:1]];
+//    [self.forgotPasswordButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+//    self.forgotPasswordButton.selectedColors = @[[UIColor blueColor]];
+//    self.forgotPasswordButton.disabledColors = @[[UIColor lightGrayColor]];
+//    self.forgotPasswordButton.corners = UIRectCornerAllCorners;
+//    self.forgotPasswordButton.colorRange = range;
     
     CGRect rect = CGRectMake(20, 107, 280, 30);
     BTTextField *userNameField = [[BTTextField alloc] initWithFrame:rect];

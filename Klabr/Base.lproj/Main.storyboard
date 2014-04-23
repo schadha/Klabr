@@ -36,23 +36,12 @@
                                     <action selector="createAccountButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qO3-kU-OG2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZk-gW-51G" customClass="BTButton">
-                                <rect key="frame" x="84" y="328" width="152" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Forgot Password">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="forgotPasswordButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hE1-pu-DaW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Klabr" id="0Uv-8z-etd"/>
                     <connections>
                         <outlet property="createAccountButton" destination="skD-Uf-zPO" id="s3K-U8-54J"/>
-                        <outlet property="forgotPasswordButton" destination="fZk-gW-51G" id="qta-EM-Uhq"/>
                         <outlet property="loginButton" destination="sfw-R2-Aer" id="Qv0-x3-W4N"/>
                         <segue destination="LC2-9g-U77" kind="push" identifier="forgotPassword" id="SJl-MO-SOc"/>
                         <segue destination="hbn-gF-2xr" kind="push" identifier="createAccount" id="Wcg-Nn-qWj"/>
